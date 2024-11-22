@@ -21,8 +21,8 @@
   
   "dns": {
     "servers": [
-      { "tag": "proxyDns", "address": "https://1.1.1.1/dns-query", "detour": "🚀 节点选择" },
-      { "tag": "localDns", "address": "223.5.5.5", "detour": "🎯 全球直连" },
+      { "tag": "proxyDns", "address": ["https://dns.cloudflare.com/dns-query", "https://dns.google/dns-query"], "detour": "🚀 节点选择" },
+      { "tag": "localDns", "address": ["223.5.5.5", "119.29.29.29"], "detour": "🎯 全球直连" },
       { "tag": "block", "address": "rcode://success" }
     ],
     "rules": [
